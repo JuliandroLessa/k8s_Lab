@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: java-app
+spec:
+  containers:
+  - name: java-container
+    image: openjdk:17
+    ports:
+    - containerPort: 8080
+    command: ["java", "-jar", "app.jar"]
