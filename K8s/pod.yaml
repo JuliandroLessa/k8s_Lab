@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: teste1
+  labels:
+    role: myrole
+spec:
+  containers:
+    - name: teste1
+      image: juliandrolessa/tech-journey:Ubuntu
+      ports:
+        - name: teste1
+          containerPort: 80
+          protocol: TCP
